@@ -1,0 +1,124 @@
+@font-face {
+   font-family: 'Zyzol';
+   font-display: swap;
+   src: url('Zyzol.otf')}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0s !important} 
+    li a:hover {
+        font-size:19px !important}}
+
+@media (prefers-contrast: more) {
+    #twitch{color:#BC8EFF}
+    #youtube{color:#FF7C7C}
+    #patreon{color:#FF7C84}}
+
+@keyframes wiggle {
+    0% {transform: rotate(-15deg)} 
+    to {transform: rotate(-13deg)}}
+
+@keyframes scroll {
+  0% {background-position: 0 0}
+  to {background-position: 16px 16px}}
+
+* {
+    scrollbar-color: #454a4d #202324}
+
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51}
+
+::selection, ::-moz-selection {
+    background-color: #004daa;
+    color: #e8e6e3}
+
+html, input {
+    background-color: #181a1b}
+
+::-webkit-scrollbar-corner {
+    background-color: #181a1b}
+
+html {
+    background-image: url('bg.gif');
+    overflow: hidden}
+
+@supports (animation: a 0) {
+    html {
+        background-image: url('bg.png');
+        animation: scroll 1s linear infinite}}
+
+html, body, input {
+    border-color: #736b5e;
+    color: #e8e6e3}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+
+a {
+    color: #3391ff;
+    text-decoration: none}
+a:hover {
+    text-decoration: underline}
+
+ul{
+    padding:0}
+
+li {
+    display: inline}
+li a {
+    font-family: 'Zyzol', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    margin: 10px;
+    transition: font-size 0.15s}
+li a:hover {
+    text-decoration: none;
+    text-shadow: 2px 0 0 #FFF, -2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, 1px 1px #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF;
+    font-size: 21px;
+    transition: font-size 0.15s}
+
+footer {
+    font-size: small;
+    color: #848484}
+
+@supports (position: absolute) {
+    footer {
+        position: absolute;
+        bottom: 5px}}
+
+#logo {
+    font-family: 'Zyzol', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transform: rotate(-15deg);
+    animation: wiggle 0.2s linear infinite alternate}
+
+#twitch {
+    color:#9E5CFF}
+#youtube {
+    color:#FF1A1A}
+#patreon {
+    color:#FF424D}
+
+.box {
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    width: 160px}
+.box a {
+        color: #fff}
+.box a:hover {
+    text-decoration: none}
+
+#mkwii-guide {
+    background-color: #fff;
+    border: 1px solid #28acf3}
+#mkwii-guide a {
+    color: #000}

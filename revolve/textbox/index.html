@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="/favicon.gif" type="image/gif">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="make ur own re:volve textboxes!">
+        <meta name="theme-color" content="#EA953E">
+        <meta name="twitter:title" content="nightcats cool project re:volve textbox generator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:description" content="make ur own re:volve textboxes!">
+        <meta property="og:title" content="nightcats cool project re:volve textbox generator">
+        <meta property="og:image" content="https://nightcat.gg/favicon.gif">
+        <meta property="twitter:description" content="make ur own re:volve textboxes!">
+        <title>nightcats cool project re:volve textbox generator</title>
+        <script>
+        if (!navigator.userAgent.match(/Nintendo DSi/)) {
+            var o=0,m="~ nightcats cool project re:volve textbox generator";
+            function s(){document.title=m.substring(o,m.length)+" "+m.substring(0,o),++o>m.length&&(o=0),window.setTimeout("s()",100)}s();
+        }
+        </script>
+        <script>
+        if (!navigator.userAgent.match(/Firefox/)) {
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">');
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">');
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">');
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="manifest" href="/site.webmanifest">');
+        }
+        </script>
+    </head>
+    <body>
+        <a href='/'>Home</a>
+        <div id='textbox'>You look at the Project Re:VOLVE textbox generator.<noscript> Though you can read its text, your web browser has JavaScript disabled, and though that's great for privacy, you can't do anything here unless you crack open Inspect Element and change the text yourself. If you're using an extension like <a href='https://ublockorigin.com'>uBlock Origin</a>, consider whitelisting this site.</noscript></div>
+        <center>
+            <input type='text' onchange='u(this.value)'>
+            <script>function u(val) {document.getElementById('textbox').innerHTML = val}</script>
+            <p>There’s no way to download your custom textbox yet, so what I do is hit the print screen key, paste it into <a href='https://gimp.org'>GIMP</a>, use the rectangle select tool to select only the textbox, select Image → Crop to Selection, select Image → Crop to Content, use the Select by Color Tool to select one of the borders (make sure the threshold is set to 0%), then hit the delete key to erase all of them, making the textbox transparent. You’ll have to save it to maintain transparency, as copying it to your clipboard will make it black again. If you plan on uploading it somewhere, you may want to zoom in a bit first to fight back against JPG compression.</p>
+            <p>The font was manually redrawn using <a href='https://pentacom.jp/pentacom/bitfontmaker2'>BitFontMaker 2</a>. You can download the font <a href='/revolve/ReVOLVE.ttf' download>here</a>, but keep in mind it may be updated in the future. Aside from <code>^</code> it has the same characters as the <a href='/revolve/font.png'>original bitmap font</a>. This means that on mobile, you may have to press and hold your quotation mark keys until the straight <code>' "</code> quotation marks appear, as smart quotes are not included.</p>
+            <p>Enjoy!</p>
+        </center>
+        <footer>last updated 2022-07-23</footer>
+        <script>
+        if (navigator.userAgent.match(/Nintendo DSi/)) {
+            document.getElementById('textbox').insertAdjacentHTML('beforeend', '<p>Though you can read its text, you are using the Nintendo DSi Browser, making the generator implode. Consider switching to a browser that is not from the Nintendo DS family.</p>');
+        }
+        </script>
+    </body>
+</html>

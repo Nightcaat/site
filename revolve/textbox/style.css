@@ -1,0 +1,27 @@
+@font-face {
+    font-family:'ReVOLVE';
+    src: url('/revolve/ReVOLVE.ttf')}
+
+html {
+    background: #181a1b}
+
+input {
+    margin-top: 25px}
+
+p {
+    width: 757px}
+
+code {
+    color: #0f0}
+
+#textbox {
+    background-image: url('/revolve/textbox.png');
+    background-size: cover;
+    image-rendering: pixelated;
+    width: 757px;
+    height: 297px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 15px;
+    font: 46px/.75em 'ReVOLVE';
+    word-spacing: 7px}
