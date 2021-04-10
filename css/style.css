@@ -1,0 +1,31 @@
+:root {
+    --mkwii: #28acf3;
+} .darkmode-background {
+    background-image: url(/img/checkerboard-white.png) !important;
+} body {
+    font-family: Verdana, Arial, sans-serif;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+} .container {
+	background-color: white;
+	border: 4px solid var(--mkwii);
+    border-radius: 3px;
+	max-width: 700px;
+	margin: 0 auto;
+} .top {
+    background: radial-gradient(var(--mkwii) 0%, #28acf300 40%);
+    border-bottom: 4px solid var(--mkwii)
+} h1, h2, h3, h4, h5, h6 {
+    color: #FFF;
+    text-align: center;
+    text-shadow:2px 0 0 var(--mkwii),-2px 0 0 var(--mkwii),0 2px 0 var(--mkwii),0 -2px 0 var(--mkwii),1px 1px var(--mkwii),-1px -1px 0 var(--mkwii),1px -1px 0 var(--mkwii),-1px 1px 0 var(--mkwii)
+} .footer {
+    background-image: url(/img/checkerboard-black.png);
+    color: white;
+    padding: 5px;
+} p {
+    padding: 5px;
+}
