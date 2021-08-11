@@ -1,0 +1,11 @@
+/* ==UserStyle==
+@name           Old Twitter Font
+@namespace      Nightcat
+@author         Nightcat
+@description    Removes the Twitter Chirp font from the list of fonts, reverting the change Twitter made on August 11th, 2021.
+@version        1.0
+==/UserStyle== */
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("twitter.com") {
+.r-37j5jr{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important}
+}
