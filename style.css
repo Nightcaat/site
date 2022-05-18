@@ -94,3 +94,21 @@ footer {
     color:#FF1A1A}
 #patreon {
     color:#FF424D}
+
+.box {
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    width: 320px}
+.box a {
+        color: #fff}
+.box a:hover {
+    text-decoration: none}
+
+#mkwii-guide {
+    background-color: #fff;
+    border: 1px solid #28acf3}
+#mkwii-guide a {
+    color: #000}
