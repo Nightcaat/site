@@ -15,12 +15,12 @@
         <title>nightcats cool website</title>
         <script>var o=0,msg="~ nightcats cool website";function Scroll(){document.title=msg.substring(o,msg.length)+" "+msg.substring(0,o),++o>msg.length&&(o=0),window.setTimeout("Scroll()",100)}Scroll();</script>
         <script>
-            if (!navigator.userAgent.match(/Firefox/)) {
-                document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">');
-                document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">');
-                document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">');
-                document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="manifest" href="/site.webmanifest">');
-            }
+        if (!navigator.userAgent.match(/Firefox/)) {
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">');
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">');
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">');
+            document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="manifest" href="/site.webmanifest">');
+        }
         </script>
     </head>
     <body>
