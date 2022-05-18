@@ -50,11 +50,6 @@ a:hover  {
     font-size: 19px;
     margin: 10px;
     transition:font-size 0.15s
-} #agentInfo {
-    width: 320px;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px;
 } li a:hover{text-decoration:none}
 #twitch{color:#9E5CFF} #youtube{color:#FF1A1A} #patreon{color:#FF424D} #flipnote {color:#FF751E}
 li a:focus {border:dotted 1px white}
@@ -71,7 +66,7 @@ ul{padding:0}
     } li a:hover {font-size:19px!important}
 }
 @media (prefers-contrast: more) {
-    #twitch{color:#BC8EFF} #youtube{color:#FF7C7C} #patreon{color:#FF7C84} #flipnote {color:#FF8131}
+    #twitch{color:#BC8EFF} #youtube{color:#FF7C7C} #patreon{color:#FF7C84}
   }
 @keyframes scroll {
   0% {
