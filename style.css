@@ -40,7 +40,10 @@
     background-color: #004daa;
     color: #e8e6e3}
 
-html, input ::-webkit-scrollbar-corner {
+html, input {
+    background-color: #181a1b}
+
+::-webkit-scrollbar-corner {
     background-color: #181a1b}
 
 html {
