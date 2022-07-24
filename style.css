@@ -47,9 +47,13 @@ html, input {
     background-color: #181a1b}
 
 html {
-    background-image: url('bg.png');
-    animation: scroll 1s linear infinite;
+    background-image: url('bg.gif');
     overflow: hidden}
+
+@supports (animation: a 0) {
+    html {
+        background-image: url('bg.png');
+        animation: scroll 1s linear infinite}}
 
 html, body, input {
     border-color: #736b5e;
