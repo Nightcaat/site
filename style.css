@@ -85,10 +85,13 @@ li a:hover {
     transition: font-size 0.15s}
 
 footer {
-    position: absolute;
-    bottom: 5px;
     font-size: small;
     color: #848484}
+
+@supports (position: absolute) {
+    footer {
+        position: absolute;
+        bottom: 5px}}
 
 #logo {
     font-family: 'Zyzol', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
