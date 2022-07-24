@@ -14,7 +14,12 @@
         <meta property="og:image" content="https://nightc.at/favicon.gif">
         <meta property="twitter:description" content="make ur own re:volve textboxes!">
         <title>nightcats cool project re:volve textbox generator</title>
-        <script>var o=0,m="~ nightcats cool project re:volve textbox generator";function s(){document.title=m.substring(o,m.length)+" "+m.substring(0,o),++o>m.length&&(o=0),window.setTimeout("s()",100)}s();</script>
+        <script>
+        if (!navigator.userAgent.match(/Nintendo DSi/)) {
+            var o=0,m="~ nightcats cool project re:volve textbox generator";
+            function s(){document.title=m.substring(o,m.length)+" "+m.substring(0,o),++o>m.length&&(o=0),window.setTimeout("s()",100)}s();
+        }
+        </script>
         <script>
         if (!navigator.userAgent.match(/Firefox/)) {
             document.querySelector("head").insertAdjacentHTML('beforeend', '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">');
