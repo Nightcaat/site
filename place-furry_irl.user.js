@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         furry_irl Place overlay
-// @namespace    https://nightc.at/
+// @namespace    https://nightcat.gg/
 // @version      6.21
 // @description  try to take over the canvas!
 // @author       oralekin, Monitor
