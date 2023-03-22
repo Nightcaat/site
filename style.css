@@ -106,7 +106,7 @@ footer {
     color:#FF424D}
 
 .box {
-    background: #000;
+    background-color: #000;
     border: 1px solid #fff;
     border-radius: 5px;
     margin: 10px;
@@ -124,5 +124,10 @@ footer {
     color: #000}
 
 #marioroyaledeluxe {
-    background: #842f03;
+    background-color: #842f03;
     border: 1px solid #e2d800}
+
+#flipnote-studio {
+    background-color: #744000;
+    border: 1px solid #f4d89f}
+}
