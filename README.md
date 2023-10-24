@@ -1,2 +1,2 @@
-# nightcats cool website
-This is the repository for my personal website, which is currently not active.
+# Nightcaat/site
+This is the repository for my personal website, *nightcats cool website* [[sic](https://en.wikipedia.org/wiki/Sic)].
