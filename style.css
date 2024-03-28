@@ -11,17 +11,28 @@
         font-size:19px !important}}
 
 @media (prefers-contrast: more) {
-    #twitch{color:#BC8EFF}
-    #youtube{color:#FF7C7C}
-    #patreon{color:#FF7C84}}
+    html, body, input{color:#FFFEFA!important}
+    #youtube{color:#FF9C9C!important}
+    #twitch{color:#CCA7FF!important}
+    #github{color:#A2BAD8!important}
+    #patreon{color:#FFA06C!important}
+    footer{color:#B8B8B8!important}}
+
+@media (prefers-contrast: less) {
+    html, body, input, .box a{color:#BAB8B6!important}
+    #youtube{color:#FF1919!important}
+    #twitch{color:#9967E0!important}
+    #github{color:#708196!important}
+    #patreon{color:#E05002!important}
+    footer{color:#818181!important}}
 
 @keyframes wiggle {
     0% {transform: rotate(-15deg)} 
     to {transform: rotate(-13deg)}}
 
 @keyframes scroll {
-  0% {background-position: 0 0}
-  to {background-position: 16px 16px}}
+    0% {background-position: 0 0}
+    to {background-position: 16px 16px}}
 
 * {
     scrollbar-color: #454a4d #202324}
@@ -86,7 +97,7 @@ li a:hover {
 
 footer {
     font-size: small;
-    color: #848484}
+    color: #929292}
 
 @supports (position: absolute) {
     footer {
@@ -98,35 +109,35 @@ footer {
     transform: rotate(-15deg);
     animation: wiggle 0.2s linear infinite alternate}
 
-#twitch {
-    color:#9E5CFF}
 #youtube {
-    color:#FF1A1A}
+    color:#FF5858}
+#twitch {
+    color:#AE75FF}
+#github {
+    color:#8295AD}
 #patreon {
-    color:#FF424D}
+    color:#FF5B02}
 
 .box {
     background-color: #000;
-    border: 1px solid #fff;
+    border: 1px solid #FFF;
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
     width: 160px}
 .box a {
-        color: #fff}
+        color: #FFF}
 .box a:hover {
     text-decoration: none}
 
 #mkwii-guide {
-    background-color: #fff;
-    border: 1px solid #28acf3}
+    background-color: #FFF;
+    border: 1px solid #28ACF3}
 #mkwii-guide a {
     color: #000}
-
-#marioroyalelegacy {
-    background-color: #842f03;
-    border: 1px solid #e2d800}
-
 #flipnote-studio {
     background-color: #744000;
-    border: 1px solid #f4d89f}
+    border: 1px solid #F4D89F}
+#marioroyalelegacy {
+    background-color: #842F03;
+    border: 1px solid #E2D800}
