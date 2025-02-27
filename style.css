@@ -58,13 +58,25 @@ html, input {
     background-color: #181a1b}
 
 html {
-    background-image: url('bg.gif');
-    overflow: hidden}
+    background-image: url('bg.gif')}
 
 @supports (animation: a 0) {
     html {
         background-image: url('bg.png');
         animation: scroll 1s linear infinite}}
+
+/* Disable scroll and zoom on iOS WebKit
+By testing for -webkit-touch-callout, we can target iOS WebKit.
+iOS 10 beta 1 overrides disabling pinch-to-zoom with user-scalable=no,
+so we need to disable it with touch-action here.
+I think disabling scroll and zoom makes the page feel pretty sleek on
+modern iPhones @ 100% zoom but I still need to test old devices. -nitey
+http://stackoverflow.com/a/47818418
+http://stackoverflow.com/a/68278302 */
+@supports (-webkit-touch-callout: none) {
+    html {
+        overflow: hidden;
+        touch-action: none}}
 
 html, body, a, input {
     border-color: #736b5e;
@@ -98,9 +110,9 @@ footer {
     font-size: small;
     color: #929292}
 
-@supports (position: absolute) {
+@supports (position: fixed) {
     footer {
-        position: absolute;
+        position: fixed;
         bottom: 5px}}
 
 #logo {

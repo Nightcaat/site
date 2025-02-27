@@ -3,7 +3,11 @@
     src: url('/revolve/ReVOLVE.ttf')}
 
 html {
-    background: #181a1b}
+    background: #181a1b;
+    /* Enable scroll and zoom on iOS WebKit
+    This overrides the root stylesheet. */
+    overflow: auto;
+    touch-action: unset}
 
 input {
     margin-top: 25px}
