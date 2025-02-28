@@ -1,9 +1,17 @@
+/* Closing brackets are formatted strangely
+// IN VS CODE, A RULE LIKE THIS:
+ul {
+    padding: 0}
+// COLLAPSES A RANGE LIKE THIS:
+ul {⋯
+// This is a line shorter than usual, so I prefer this :] */
+
 @font-face {
     font-family:'ReVOLVE';
     src: url('/revolve/ReVOLVE.ttf')}
 
 html {
-    background: #181a1b;
+    background:#181a1b;
     /* Enable scroll and zoom on iOS WebKit
     This overrides the root stylesheet. */
     overflow: auto;
@@ -16,7 +24,7 @@ p {
     width: 757px}
 
 code {
-    color: #0f0}
+    color:#0f0}
 
 #textbox {
     background-image: url('/revolve/textbox.png');

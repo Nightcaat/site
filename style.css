@@ -1,3 +1,11 @@
+/* Closing brackets are formatted strangely
+// IN VS CODE, A RULE LIKE THIS:
+ul {
+    padding: 0}
+// COLLAPSES A RANGE LIKE THIS:
+ul {⋯
+// This is a line shorter than usual, so I prefer this :] */
+
 @font-face {
    font-family: 'Zyzol';
    font-display: swap;
@@ -8,22 +16,22 @@
         animation: none !important;
         transition-duration: 0s !important} 
     li a:hover {
-        font-size:19px !important}}
+        font-size: 19px !important}}
 
 @media (prefers-contrast: more) {
-    html, body, a, input{color:#FFFEFA!important}
-    #youtube{color:#FF9C9C!important}
-    #twitch{color:#CCA7FF!important}
-    #github{color:#A2BAD8!important}
-    #patreon{color:#FFA06C!important}
-    footer{color:#B8B8B8!important}}
+    html, body, a, input{color:#fffEFA!important}
+    #youtube{color:#ff9C9C!important}
+    #twitch{color:#cca7FF!important}
+    #github{color:#a2bAD8!important}
+    #patreon{color:#ffa06C!important}
+    footer{color:#b8b8b8!important}}
 
 @media (prefers-contrast: less) {
-    html, body, a, input{color:#BAB8B6!important}
-    #youtube{color:#FF1919!important}
-    #twitch{color:#9967E0!important}
+    html, body, a, input{color:#bab8B6!important}
+    #youtube{color:#ff1919!important}
+    #twitch{color:#9967e0!important}
     #github{color:#708196!important}
-    #patreon{color:#E05002!important}
+    #patreon{color:#e05002!important}
     footer{color:#818181!important}}
 
 @keyframes wiggle {
@@ -35,27 +43,29 @@
     to {background-position: 16px 16px}}
 
 * {
-    scrollbar-color: #454a4d #202324}
+    scrollbar-color:#454a4d #202324}
 
 ::-webkit-scrollbar {
-    background-color: #202324;
-    color: #aba499}
+    background-color:#202324;
+    color:#aba499}
 ::-webkit-scrollbar-thumb {
-    background-color: #454a4d}
+    background-color:#454a4d}
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #575e62}
+    background-color:#575e62}
 ::-webkit-scrollbar-thumb:active {
-    background-color: #484e51}
+    background-color:#484e51}
 
 ::selection, ::-moz-selection {
-    background-color: #004daa;
-    color: #e8e6e3}
+    background-color:#004daa;
+    color:#e8e6e3}
 
 html, input {
-    background-color: #181a1b}
+    background-color:#181a1b}
 
+/* Cannot combine this pseudo-element with the previous rule
+   because old browsers fail to parse this and skip it :( */
 ::-webkit-scrollbar-corner {
-    background-color: #181a1b}
+    background-color:#181a1b}
 
 html {
     background-image: url('bg.gif')}
@@ -70,7 +80,7 @@ By testing for -webkit-touch-callout, we can target iOS WebKit.
 iOS 10 beta 1 overrides disabling pinch-to-zoom with user-scalable=no,
 so we need to disable it with touch-action here.
 I think disabling scroll and zoom makes the page feel pretty sleek on
-modern iPhones @ 100% zoom but I still need to test old devices. -nitey
+modern iPhones at 100% zoom, but I still need to test old devices...
 http://stackoverflow.com/a/47818418
 http://stackoverflow.com/a/68278302 */
 @supports (-webkit-touch-callout: none) {
@@ -79,10 +89,13 @@ http://stackoverflow.com/a/68278302 */
         touch-action: none}}
 
 html, body, a, input {
-    border-color: #736b5e;
-    color: #e8e6e3}
+    border-color:#736b5e;
+    color:#e8e6E3}
 
 body {
+    /* Explanation for font choices
+    http://smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-b
+    */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
 
 a {
@@ -90,8 +103,8 @@ a {
 a:hover {
     text-decoration: underline}
 
-ul{
-    padding:0}
+ul {
+    padding: 0}
 
 li {
     display: inline}
@@ -108,8 +121,10 @@ li a:hover {
 
 footer {
     font-size: small;
-    color: #929292}
+    color:#929292}
 
+/* WARN: Some browsers support position: fixed but not @supports itself
+http://github.com/Nightcaat/site/issues/9 */
 @supports (position: fixed) {
     footer {
         position: fixed;
@@ -121,13 +136,13 @@ footer {
     animation: wiggle 0.2s linear infinite alternate}
 
 #youtube {
-    color:#FF5858}
+    color:#ff5858}
 #twitch {
-    color:#AE75FF}
+    color:#ae75FF}
 #github {
     color:#8295AD}
 #patreon {
-    color:#FF5B02}
+    color:#ff5B02}
 
 .box {
     background-color: #000;
@@ -141,12 +156,12 @@ footer {
 
 #mkwii-guide {
     background-color: #FFF;
-    border: 1px solid #28ACF3}
+    border: 1px solid #28aCF3}
 #mkwii-guide a {
     color: #000 !important}
 #flipnote-studio {
     background-color: #744000;
-    border: 1px solid #F4D89F}
+    border: 1px solid #f4d89F}
 #marioroyalelegacy {
-    background-color: #842F03;
-    border: 1px solid #E2D800}
+    background-color: #842f03;
+    border: 1px solid #e2d800}
