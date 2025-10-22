@@ -8,7 +8,7 @@ ul {⋯
 
 @font-face {
     font-family:'ReVOLVE';
-    src: url('/revolve/ReVOLVE.ttf')}
+    src: url('../ReVOLVE.woff2'), url('../ReVOLVE.woff'), url('../ReVOLVE.ttf')}
 
 html {
     background:#181a1b;
@@ -27,7 +27,7 @@ code {
     color:#0f0}
 
 #textbox {
-    background-image: url('/revolve/textbox.png');
+    background-image: url('../textbox.png');
     background-size: cover;
     image-rendering: pixelated;
     width: 757px;

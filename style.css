@@ -9,7 +9,8 @@ ul {⋯
 @font-face {
    font-family: 'Zyzol';
    font-display: swap;
-   src: url('Zyzol.otf')}
+   src: url(Zyzol.woff2), url(Zyzol.woff), url('Zyzol.ttf');
+}
 
 @media (prefers-reduced-motion: reduce) {
     * {
