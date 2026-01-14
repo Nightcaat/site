@@ -32,16 +32,15 @@
         </script>
     </head>
     <body>
-        <a href='/'>Home</a>
         <div id='textbox'>You look at the Project Re:VOLVE textbox generator.<noscript> Though you can read its text, your web browser has JavaScript disabled, and though that's great for privacy, you can't do anything here unless you crack open Inspect Element and change the text yourself. If you're using an extension like <a href='http://ublockorigin.com'>uBlock Origin</a>, consider whitelisting this site.</noscript></div>
         <center>
         <!-- onchange updates after focus lost; fully supports DSi
              oninput updates as content changes; unsupported on DSi -->
             <input type='text' placeholder='You look at the Project Re:VOLVE textbox generator.' onchange='u(this.value)' oninput='u(this.value)'>
             <script>function u(val) {document.getElementById('textbox').innerHTML = val}</script>
-            <p>There’s no way to download your custom textbox yet, so what I do is hit the print screen key, paste it into <a href='http://gimp.org'>GIMP</a>, use the rectangle select tool to select only the textbox, select Image → Crop to Selection, select Image → Crop to Content, use the Select by Color Tool to select one of the borders (make sure the threshold is set to 0%), then hit the delete key to erase all of them, making the textbox transparent. You’ll have to save it to maintain transparency, as copying it to your clipboard will make it black again. If you plan on uploading it somewhere, you may want to zoom in a bit first to fight back against JPG compression.</p>
-            <p>The font was manually redrawn using <a href='http://pentacom.jp/pentacom/bitfontmaker2'>BitFontMaker 2</a>. Download: <a href='../ReVOLVE.woff2'>WOFF2 (most compressed)</a>, <a href='../ReVOLVE.woff'>WOFF (compressed)</a>, <a href='../ReVOLVE.ttf'>TTF (most compatible)</a>. Keep in mind it may be updated in the future. Aside from the addition of <code>^</code> it has the same characters as the <a href='../font.png'>original bitmap font</a>. This means that on mobile, you may have to press and hold your quotation mark keys until the straight <code>' "</code> quotation marks appear, as smart quotes are not included.</p>
-            <p>Enjoy!</p>
+            <p>There’s no way to download your creation yet, so what I do is hit the print screen key, paste into <a href='http://gimp.org'>GIMP</a>, use <b>Rectangle Select Tool</b> to select only the textbox, select <b>Image → Crop to Selection</b>, then <b>Image → Crop to Content</b>, use <b>Select by Color Tool</b> to select one of the borders (in <b>Tool Options</b>, make sure <b>Threshold</b> is <b>0</b>), then hit the delete key to erase all of them, making the textbox transparent. In GIMP 2.10 and earlier, you may have to export to maintain transparency, as copying it to your clipboard may make it black again. If you plan on uploading to social media, you may want to zoom in first to fight against lossy compression.</p>
+            <p>The font was redrawn by hand using <a href='http://pentacom.jp/pentacom/bitfontmaker2'>BitFontMaker 2</a>.<br>It has the same characters as the <a href='../font.png'>original bitmap font</a>, plus caret (<code>^</code>); smart quotes aren’t included.<br>On mobile, you may have to hold your quote keys until straight quotes appear.<br><b>Download:</b> <a href='../ReVOLVE.ttf'>TTF</a>, <a href='../ReVOLVE.woff2'>WOFF2</a>, <a href='../ReVOLVE.woff'>WOFF</a></p>
+            <h3>Enjoy!</h3>
         </center>
         <footer>last updated 2026-01-14</footer>
     </body>
