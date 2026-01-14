@@ -21,7 +21,7 @@ input {
     margin-top: 25px}
 
 p {
-    width: 757px}
+    max-width: 757px}
 
 code {
     color:#0f0}
