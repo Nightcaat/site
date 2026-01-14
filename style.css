@@ -7,10 +7,11 @@ ul {⋯
 // This is a line shorter than usual, so I prefer this :] */
 
 @font-face {
-   font-family: 'Zyzol';
-   font-display: swap;
-   src: url(Zyzol.woff2), url(Zyzol.woff), url('Zyzol.ttf');
-}
+    font-family: 'Zyzol';
+    font-display: swap;
+    /* Specify this is WOFF2 format to avoid the New 3DS downloading it
+       New 3DS does not support it so this avoids a wasteful request */
+    src: url(Zyzol.woff2) format(woff2), url(Zyzol.woff), url('Zyzol.ttf')}
 
 @media (prefers-reduced-motion: reduce) {
     * {

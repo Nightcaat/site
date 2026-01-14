@@ -8,7 +8,9 @@ ul {⋯
 
 @font-face {
     font-family:'ReVOLVE';
-    src: url('../ReVOLVE.woff2'), url('../ReVOLVE.woff'), url('../ReVOLVE.ttf')}
+    /* Specify this is WOFF2 format to avoid the New 3DS downloading it
+       New 3DS does not support it so this avoids a wasteful request */
+    src: url('../ReVOLVE.woff2') format("woff2"), url('../ReVOLVE.woff'), url('../ReVOLVE.ttf')}
 
 html {
     background:#181a1b;
