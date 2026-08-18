@@ -122,9 +122,9 @@ li a:hover {
     font-size: 21px;
     transition: font-size 0.15s}
 
-footer {
+.footer {
     font-size: small;
-    color:#929292}
+    color:#919191}
 
 /* WARN: Some browsers support position: fixed but not @supports itself
 http://github.com/Nightcaat/site/issues/9 */
