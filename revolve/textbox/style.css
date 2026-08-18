@@ -7,10 +7,10 @@ ul {⋯
 // This is a line shorter than usual, so I prefer this :] */
 
 @font-face {
-    font-family:'ReVOLVE';
+    font-family:"ReVOLVE";
     /* Specify this is WOFF2 format to avoid the New 3DS downloading it
        New 3DS does not support it so this avoids a wasteful request */
-    src: url('../ReVOLVE.woff2') format("woff2"), url('../ReVOLVE.woff'), url('../ReVOLVE.ttf')}
+    src: url("../ReVOLVE.woff2") format("woff2"), url("../ReVOLVE.woff"), url("../ReVOLVE.ttf")}
 
 html {
     background:#181a1b;
@@ -32,7 +32,7 @@ code {
     color:#0f0}
 
 #textbox {
-    background-image: url('../textbox.png');
+    background-image: url("../textbox.png");
     background-size: cover;
     image-rendering: pixelated;
     width: 757px;
@@ -40,5 +40,5 @@ code {
     margin: 0 auto;
     padding-top: 10px;
     padding-left: 15px;
-    font: 46px/.75em 'ReVOLVE';
+    font: 46px/.75em "ReVOLVE";
     word-spacing: 7px}
