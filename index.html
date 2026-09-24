@@ -33,7 +33,17 @@
         <h1 id="logo">nightcat.gg</h1>
         <h2>Where <a onclick="alert(navigator.userAgent)" title="???">do</a> <a href="youligi.png" title="?!">you</a> want to go today?</h2>
         <ul>
-            <li><a id="youtube" href="//youtube.com/@Nightcaat" title="A mediocre video sharing platform">YouTube</a></li>
+            <li><a id="youtube" href="//youtube.com/@Nightcaat" title="A mediocre video sharing platform" onclick="
+            // Warn trying to visit YouTube from Nintendo DS Browser
+                if (navigator.userAgent.match(/Nitro/)) {
+                    if (confirm('You are (probably) using Nintendo DS Browser.\nYouTube DOES load, but the browser will run out of memory, potentially freezing your system.\nLoad anyway?') == false)
+                    {return false}
+                }
+            // ...and from Nintendo DSi Browser. Was unable to get 'else if' to work
+                if (navigator.userAgent.match(/Nintendo DSi/)) {
+                    if (confirm('You are (probably) using Nintendo DSi Browser.\nYouTube DOES load, but the browser will run out of memory.\nLoad anyway?') == false)
+                    {return false}
+                }">YouTube</a></li>
             <li><a id="twitch" href="//twitch.tv/Nightcaaat" title="A mediocre livestreaming platform">Twitch</a></li>
             <li><a id="github" href="//github.com/Nightcaat" title="A mediocre developer platform">GitHub</a></li>
             <li><a id="patreon" href="//patreon.com/Nightcaat" title="A mediocre monetization platform">Patreon</a></li>
