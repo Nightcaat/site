@@ -41,4 +41,5 @@ code {
     padding-top: 10px;
     padding-left: 15px;
     font: 46px/.75em "ReVOLVE";
-    word-spacing: 7px}
+    word-spacing: 7px;
+    word-wrap: break-word}
