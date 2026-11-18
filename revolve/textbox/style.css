@@ -14,10 +14,9 @@ ul {⋯
 
 html {
     background:#181a1b;
-    /* Enable scroll and zoom on iOS WebKit
+    /* Enable scroll on iOS WebKit
     This overrides the root stylesheet. */
-    overflow: auto;
-    touch-action: unset}
+    overflow: auto}
 
 input {
     margin-top: 25px}

@@ -77,18 +77,16 @@ html {
         background-image: url("bg.png");
         animation: scroll 1s linear infinite}}
 
-/* Disable scroll and zoom on iOS WebKit
+/* Disable scroll at 100% zoom on iOS WebKit
 By testing for -webkit-touch-callout, we can target iOS WebKit.
-iOS 10 beta 1 overrides disabling pinch-to-zoom with user-scalable=no,
-so we need to disable it with touch-action here.
-I think disabling scroll and zoom makes the page feel pretty sleek on
-modern iPhones at 100% zoom, but I still need to test old devices...
-http://stackoverflow.com/a/47818418
-http://stackoverflow.com/a/68278302 */
+@supports was added in iOS 9, so this only applies from then onward.
+"overflow: hidden" disables scroll unless the user has pinched to zoom.
+This disables the rubber band effect that would normally be present.
+I have yet to look into if an Android equivalent of this should exist.
+http://stackoverflow.com/a/47818418 */
 @supports (-webkit-touch-callout: none) {
     html {
-        overflow: hidden;
-        touch-action: none}}
+        overflow: hidden}}
 
 html, body, a, input {
     border-color:#736b5e;
