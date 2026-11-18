@@ -16,7 +16,7 @@ ul {⋯
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
-        transition-duration: 0s !important} 
+        transition-duration: 0s !important}
     li a:hover {
         font-size: 19px !important}}
 
